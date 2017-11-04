@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>FriendFinder</title>
+
+		<!-- Latest compiled and minified CSS & JS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+		<!-- Chosen -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+		<link rel="stylesheet" href="cover.css">
+	</head>
+	<body class="Sbody">
+
+		<div class="container surveyCon">
+
+			<h2>Survey Questions</h2>
+			<hr>
+
+			<h4>About You</h4>
+			<h6>Name (Required)</h6>
+			<input type="text" name="" id="name" class="form-control" required >
+
+			<h6>Link to Photo Image (Required)</h6>
+			<input type="text" name="" id="photo" class="form-control" required >
+
+			<hr>
+
+			<h4>Question 1</h4>
+			<h6>Do you live in a big house with a yard or some land?</h6>
+			<select data-placeholder="" class="chosen-select" id="q1" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h4>Question 2</h4>
+			<h6>Do you have a lot of time to spend exercising and feeding a pet?</h6>
+			<select data-placeholder="" class="chosen-select" id="q2" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+
+			<h4>Question 3</h4>
+			<h6>Do you live alone?</h6>
+			<select data-placeholder="" class="chosen-select" id="q3" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+
+			<h4>Question 4</h4>
+			<h6>Do you travel often, or spend a lot of time away from your home?</h6>
+			<select data-placeholder="" class="chosen-select" id="q4" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+
+			<h4>Question 5</h4>
+			<h6>Do you feel like cleaning up after a messy pet?</h6>
+			<select data-placeholder="" class="chosen-select" id="q5" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+
+			<h4>Question 6</h4>
+			<h6>Do you like the idea of an animal companion in the home playing everywhere?</h6>
+			<select data-placeholder="" class="chosen-select" id="q6" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+
+			<h4>Question 7</h4>
+			<h6>Do you see yourself enjoying a pet's companionshipand a cuddler.</h6>
+			<select data-placeholder="" class="chosen-select" id="q7" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h4>Question 8</h4>
+			<h6>
+				Are you able to spend as much time grooming as your pet needs?
+			</h6>
+			<select data-placeholder="" class="chosen-select" id="q8" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h4>Question 9</h4>
+			<h6>Would you like your pet to greet you at the door?</h6>
+			<select data-placeholder="" class="chosen-select" id="q9" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<h6>Question 10</h6>
+			<h6>Do you live close to your family or friends?</h6>
+			<select data-placeholder="" class="chosen-select" id="q10" required>
+				<option value=""></option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+
+			<br>
+			<br>
+
+			<!-- Submit Button -->
+			<button type="submit" class="btn btn-sm " id="submit">
+				Submit</button>
+
+
+
+		</div>
+		<hr>
+		<footer class="footer">
+			<div class="container">
+				<p><a href="/api/friends">API Friends List</a> | <a href="/api/users">API Users List</a> | <a href="https://github.com/lubnaqadah/FriendFinder">GitHub Repo</a></p>
+			</div>
+		</footer>
+
+
+		<!-- Modal -->
+		<div id="resultsModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h2 class="modal-title"><strong>Best Match</strong></h2>
+					</div>
+					<div class="modal-body">The best animal for you is:
+
+						<h2 id="matchName"></h2>
+						<img id="matchImg" src="/app/public/assets/dog.jpg" alt="">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+
+			$('#submit').on('click', function(){
+				// Form validation
+				var isValid = true;
+				function validateForm() {
+
+					$('.form-control').each(function() {
+						if ( $(this).val() === '' )
+							isValid = false;
+					});
+
+					return isValid;
+				}
+				validateForm();
+
+				if (isValid){
+
+					var newUser = {
+						name : $('#name').val().trim(),
+						photo : $('#photo').val(),
+						answers : [parseInt($('#q1').val()),parseInt($('#q2').val()),parseInt($('#q3').val()),parseInt($('#q4').val()),parseInt($('#q5').val()),parseInt($('#q6').val()),parseInt($('#q7').val()),parseInt($('#q8').val()),parseInt($('#q9').val()),parseInt($('#q10').val())]
+					};
+
+					var currentURL = window.location.origin;
+					newUser = JSON.stringify(newUser);
+					// AJAX post the data to the friends API. 
+					$.post(currentURL + '/api/friends', newUser, function(data){
+						alert('212');
+						console.log(data);
+						console.log("result");
+						console.log(newUser);
+					})
+				}else{
+					alert("Please fill out all fields before submitting!");
+				}
+				//
+				//				$("#matchName").text(data.animal);
+				//				$('#matchImg').attr("src", data.image);
+				//
+				//				// Show the modal with the best match 
+				//				$("#resultsModal").modal('toggle');
+
+			});
+		</script>
+
+	</body>
+</html>
