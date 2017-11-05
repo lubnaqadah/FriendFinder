@@ -109,7 +109,10 @@ main{
 }
 
 
-
+#matchImg{
+	max-height: 300px;
+	max-width: 300px
+}
 
 @media (min-width: 48em) {
 	.masthead-brand {

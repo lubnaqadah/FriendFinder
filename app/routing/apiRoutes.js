@@ -6,37 +6,41 @@ module.exports = function(app){
 	app.get('/api/users', function(req, res){
 		res.json(data.users);
 	})
-	app.post('/api/users', function(req, res){
-		data.users.push(req.body);
-	});
+	//	app.post('/api/users', function(req, res){
+	//		data.users.push(req.body);
+	//	});
 
 	app.get('/api/friends', function(req, res){
 		res.json(data.allFriends);
 	});
 
-	app.post('/api/friends', function(req, res){
-		
+	app.post('/api/users', function(req, res){
+		data.users.push(req.body);
+
+
 		var userScores = req.body.answers;
-		var scoreDiff = 0;
-		var minDiff = 100;
+
+		var minDiff = 1000;
 		var animal, image;
-		console.log(req.body);
-		console.log(JSON.parse(userScores));
+		var bestMatch = new Object();
+
 		for (var i = 0; i < data.allFriends.length; i++){
-			
+			var scoreDiff = 0;
 			for (var j = 0; j < userScores.length; j++){
 				scoreDiff += (Math.abs(data.allFriends[i].scores[j] - userScores[j]));
-				if (scoreDiff < minDiff){
-					minDiff = scoreDiff;
-					animal = data.allFriends[i].animal;
-					image = data.allFriends[i].photo;
-				}
 				
 			}
-			return minDiff, animal, image;
-		}
 		
-		res.json(minDiff, animal, image);
+
+			if (scoreDiff < minDiff){
+				minDiff = scoreDiff;
+				bestMatch.animal = data.allFriends[i].animal;
+				bestMatch.image = data.allFriends[i].photo;
+				
+			}
+		}
+
+		res.send(bestMatch);
 	});
 
 };

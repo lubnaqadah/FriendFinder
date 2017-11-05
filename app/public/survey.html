@@ -215,23 +215,25 @@
 					};
 
 					var currentURL = window.location.origin;
-					newUser = JSON.stringify(newUser);
+
 					// AJAX post the data to the friends API. 
-					$.post(currentURL + '/api/friends', newUser, function(data){
-						alert('212');
+					$.post(currentURL + '/api/users', newUser) 
+					
+					.then(function(data){
+						
 						console.log(data);
-						console.log("result");
-						console.log(newUser);
+
+						$("#matchName").text(data.animal);
+						$('#matchImg').attr("src", data.image);
+
+						// Show the modal with the best match 
+						$("#resultsModal").modal('toggle');
 					})
 				}else{
 					alert("Please fill out all fields before submitting!");
 				}
-				//
-				//				$("#matchName").text(data.animal);
-				//				$('#matchImg').attr("src", data.image);
-				//
-				//				// Show the modal with the best match 
-				//				$("#resultsModal").modal('toggle');
+
+
 
 			});
 		</script>
